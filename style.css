@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Discord-Name-Font;
+    src: url('./assets/fonts/whitneymedium.otf') format('truetype');
+}
+
+@font-face {
+    font-family: Discord-Chat-Font;
+    src: url('./assets/fonts/whitneybook.otf') format('truetype');
+}
+
+body {
+    font-family: Discord-Chat-Font;
+    background-color: #36393e;
+}
+
+.message {
+    padding-top: 10px;
+    font-size: 14;
+    text-rendering: optimizeLegibility;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.message img {
+    vertical-align: baseline;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+}
+
+.message span.message-text {
+    padding-left: 15px;
+    padding-top: 5px;
+}
+
+.message span.message-text div.text-title span.name {
+    font-family: Discord-Name-Font;
+    color: #24a6fc;
+}
+
+.message span.message-text div.text-title span.time {
+    font-size: small;
+    color: #99aab5;
+}
